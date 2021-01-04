@@ -1,3 +1,5 @@
+import { toggleDropdown } from "./toggle";
+
 let dropdown = document.getElementById("dropdown");
 let dropdownBox = document.getElementById("dropdown-box");
 let dropdownRoot = document.getElementById("dropdown-root");
@@ -48,11 +50,11 @@ searchButton.addEventListener("click", function () {
     });
 });
 
-dropdown.addEventListener("click", function () {
-  dropdownBox.style.display !== "block"
-    ? (dropdownBox.style.display = "block")
-    : (dropdownBox.style.display = "none");
-});
+const App = () => {
+  toggleDropdown();
+};
+
+App();
 
 searchbar.addEventListener("keyup", function (event) {
   event.preventDefault();
