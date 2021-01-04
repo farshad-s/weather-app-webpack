@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/farshad-s/weather-app-webpack/issues"
   },
-  "homepage": "https://github.com/farshad-s/weather-app-webpack#readme"
+  "homepage": "https://github.com/farshad-s/weather-app-webpack#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
 }
