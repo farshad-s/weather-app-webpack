@@ -1,6 +1,6 @@
 import { toggleDropdown } from "./toggle";
+import { enterKey } from "./enterKey";
 
-let dropdown = document.getElementById("dropdown");
 let dropdownBox = document.getElementById("dropdown-box");
 let dropdownRoot = document.getElementById("dropdown-root");
 let searchbar = document.getElementById("city-search");
@@ -52,13 +52,7 @@ searchButton.addEventListener("click", function () {
 
 const App = () => {
   toggleDropdown();
+  enterKey();
 };
 
 App();
-
-searchbar.addEventListener("keyup", function (event) {
-  event.preventDefault();
-  if (event.keyCode === 13) {
-    searchButton.click();
-  }
-});
