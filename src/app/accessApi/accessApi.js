@@ -6,7 +6,7 @@ let cityName = "";
 
 let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},uk&APPID=d8464e2cd289e08057abc0aba345f9b5`;
 
-export function accessApi() {
+export const accessApi = () => {
   searchButton.addEventListener("click", function () {
     dropdownBox.style.display !== "block"
       ? (dropdownBox.style.display = "block")
@@ -47,4 +47,4 @@ export function accessApi() {
         console.log("error is", error);
       });
   });
-}
+};
