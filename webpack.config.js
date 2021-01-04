@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js",
-    publicPath: "/bundle.js/",
+    publicPath: "/weather-app-webpack/",
   },
   module: {
     rules: [
